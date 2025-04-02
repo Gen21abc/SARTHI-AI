@@ -1,0 +1,108 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.chat-container {
+  width: 400px;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-box {
+  background: #000000;
+  width: 100%;
+  max-height: 450px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 12px;
+  max-width: 90%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.message.bot {
+  background: #f1f1f1;
+  color: #333;
+  align-self: flex-start;
+}
+
+.message.user {
+  background: #292c2f;
+  color: rgb(0, 0, 0);
+  align-self: flex-end;
+}
+
+.chat-btn {
+  background: #000000;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.file-upload-label {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.file-upload-button {
+  cursor: pointer;
+}
+
+.answer-container {
+  margin-top: 16px;
+  background: #000609;  /* Keep or change this */
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  
+  /* ADD THESE STYLES */
+  /* Makes text black for better contrast */
+  font-weight: bold; /* Makes text more readable */
+  background: #000911; /* Darker shade for better contrast */
+  color: #ffffff; 
+  height: 8rem;
+  overflow-y: auto;  
+}
+
+
+
+  
